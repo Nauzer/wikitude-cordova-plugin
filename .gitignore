@@ -27,3 +27,4 @@ DerivedData
 
 /iOS/SampleProjects/Extended/HelloImageRecognition/HelloImageRecognition/Frameworks/Wikitude/WikitudeSDK.framework/
 /iOS/SampleProjects/Basic/HelloWorld/HelloWorld/Frameworks/Wikitude/WikitudeSDK.framework/
+*.tar.gz
