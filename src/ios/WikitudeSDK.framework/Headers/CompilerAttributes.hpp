@@ -20,10 +20,16 @@
 #endif
 
 #if defined(_WIN32) || defined(__WIN32__)
+#if defined(WKTD_EXPORT_LIBRARY_API)
     #define WT_EXPORT_API __declspec(dllexport)
+#else
+    #define WT_EXPORT_API
+#endif
 #else
     #define WT_EXPORT_API __attribute__ ((visibility("default")))
 #endif
+
+#define WKTD_UNUSED_VARIABLE(x) (void)(x)
 
 #endif /* __cplusplus */
 
