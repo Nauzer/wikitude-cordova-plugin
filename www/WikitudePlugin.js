@@ -279,6 +279,15 @@
     	cordova.exec(this.onWikitudeOK, this.onWikitudeError, "WikitudePlugin", "openAppSettings", []);
 	}
 
+	/**
+	 * Use this function to display an alert with a specific message.
+	 *
+	 * @param alertString The message to display in the alert.
+	 */
+	WikitudePlugin.prototype.showAlert = function(alertString) {
+		cordova.exec(this.onWikitudeOK, this.onWikitudeError, "WikitudePlugin", "showAlert", [alertString]);
+	};
+
 	/*
 	 *	=============================================================================================================================
 	 *
